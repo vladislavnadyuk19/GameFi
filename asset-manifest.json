@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/GameFi/static/css/main.6cc2a391.css",
+    "main.js": "/GameFi/static/js/main.f1bafc9a.js",
+    "static/media/icon.svg": "/GameFi/static/media/icon.734cf26b6e8adc52ef43.svg",
+    "static/media/star.svg": "/GameFi/static/media/star.95e6f0a5d4bd43344035.svg",
+    "static/media/text.svg": "/GameFi/static/media/text.95e6f0a5d4bd43344035.svg",
+    "index.html": "/GameFi/index.html",
+    "main.6cc2a391.css.map": "/GameFi/static/css/main.6cc2a391.css.map",
+    "main.f1bafc9a.js.map": "/GameFi/static/js/main.f1bafc9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cc2a391.css",
+    "static/js/main.f1bafc9a.js"
+  ]
+}
