@@ -1,0 +1,17 @@
+.button {
+    background-color: var(--green);
+    fill: var(--black);
+    color: var(--black);
+    font-weight: 700;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 12px;
+    width: 200px;
+    min-height: 48px;
+
+    &:hover {
+        background-color: var(--green-hover);
+    }
+}

@@ -1,0 +1,282 @@
+.tables {
+    color: var(--white);
+    font-family: "Inter";
+    padding-bottom: 25px;
+    padding: 60px 0;
+}
+
+.tables__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tables__top--mt {
+    margin-top: 5px;
+}
+
+.tables__title {
+    font-weight: 700;
+    font-size: 56px;
+    font-family: 'Alumni Sans';
+}
+
+.tables__link {
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+}
+
+.tables__controllers {
+    display: flex;
+    gap: 0 4px;
+    font-weight: 600;
+}
+
+
+.tables__text {
+    text-wrap: nowrap;
+    color: #a4acbd;
+    font-size: 16px;
+
+}
+
+.tables__button {
+    width: 95px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    background-color: rgb(46, 50, 57);
+}
+
+.tables__button--active {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.tables__content {
+    margin-top: 52px;
+    justify-content: space-between;
+    display: none;
+    gap: 0 72px;
+}
+
+.tables__content--active {
+    display: flex;
+}
+
+.tables__table-title {
+    font-size: 32px;
+    font-family: 'Alumni Sans';
+}
+
+
+.tables__wrapper {
+    max-width: 700px;
+    width: 100%;
+}
+
+.tables__item {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 32px;
+}
+
+.tables__item-left {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.tables__item-image {
+    max-width: 62px;
+    border-radius: 2px;
+}
+
+.tables__item-title {
+    font-size: 16px;
+    font-weight: 700;
+
+    &:hover {
+        color: var(--green);
+    }
+}
+
+.tables__item {
+    text-wrap: nowrap;
+}
+
+.tables__item tbody tr:hover {
+    background-color: #2E3239;
+}
+
+.tables__item td {
+    cursor: pointer;
+    text-align: end;
+
+    padding: 12px 0 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tables__item th {
+    text-align: end;
+    min-width: 120px;
+    padding-bottom: 17px;
+    font-size: 14px;
+    border-bottom: 1px solid #52525A;
+    line-height: 1;
+
+    color: #52525A;
+
+    &:first-child {
+        text-align: start;
+    }
+}
+
+.tables__point--border {
+    border-bottom: 2px solid var(--green);
+    color: var(--white);
+}
+
+
+.tables__image-s {
+    width: 22px;
+    height: 24px;
+}
+
+.tables__item-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-weight: 400;
+    margin-top: 4px;
+    font-size: 15px;
+}
+
+
+.tables__proc {
+    display: flex;
+    gap: 0 6px;
+    justify-content: end;
+    align-items: center;
+}
+
+.tables__high {
+    color: var(--green);
+}
+
+.tables__lower {
+    color: #EB3A3A;
+}
+
+
+@media (max-width:1500px) {
+    .tables__item-title {
+        font-size: 14px;
+    }
+
+    .tables__item th {
+        min-width: 120px;
+    }
+
+    .tables__item-image {
+        width: 50px;
+    }
+
+    .tables__item-left {
+        gap: 0 8px;
+    }
+
+    .tables__wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .tables__item {
+        width: 100%;
+    }
+
+    .tables__content {
+        flex-direction: column;
+        gap: 40px 0;
+    }
+
+    .tables__item-title {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tables {
+        padding: 40px 0;
+    }
+
+    .tables__title {
+        font-size: 32px;
+    }
+
+    .tables__text {
+        text-wrap: wrap;
+    }
+
+    .tables__item {
+        text-wrap: wrap;
+    }
+
+    .tables__item th {
+        min-width: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: 140px;
+
+        &:first-child {
+            width: 140px;
+            padding-left: 5px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+    }
+
+
+    .tables__item td {
+        font-size: 14px;
+    }
+
+    .tables__item-left {
+        max-width: 140px;
+        font-size: 14px;
+    }
+
+    .tables__item-title {
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-align: start;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    .tables__item-price {
+        font-size: 14px;
+    }
+
+
+    .tables__button {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,154 @@
+.about {
+    padding: 60px 0;
+
+}
+
+.about__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    gap: 20px;
+}
+
+.about__item {
+    width: calc(25% - 20px);
+    border-radius: 24px;
+    padding: 25px 40px;
+    font-size: 12px;
+    color: var(--white);
+    font-family: 'Inter';
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.45);
+}
+
+.about__item:nth-child(1n) {
+    background-color: #272727;
+
+    &:hover {
+        background-color: #040405;
+    }
+
+}
+
+.about__item:nth-child(2n),
+.about__item:nth-child(5),
+.about__item:nth-child(7) {
+    background-color: #040405;
+
+    &:hover {
+        background-color: #272727;
+    }
+}
+
+.about__item:nth-child(6),
+
+.about__item:nth-child(8) {
+    background-color: #272727;
+
+    &:hover {
+        background-color: #040405;
+    }
+
+}
+
+.about__top {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    line-height: 1;
+    margin-top: 12px;
+}
+
+.about__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.about__category {
+    padding: 8px 12px;
+    font-size: 12px;
+    font-family: 'Inter';
+    border-radius: 20px;
+}
+
+.about__category-wrapper {
+    color: var(--white);
+    display: flex;
+    gap: 0 8px;
+    align-items: center;
+}
+
+.about__category--green {
+    color: var(--green);
+    background-color: #7ff2521a;
+
+}
+
+
+.about__category--blue {
+    color: #00f0ff;
+    background-color: #00f0ff1a;
+}
+
+.about__category--red {
+    background-color: #ff5b431a;
+    color: #ff5b43;
+}
+
+
+.about__category--yellow {
+    background-color: #ffd6001a;
+    color: #ffd600;
+}
+
+.about__text {
+    color: var(--grey);
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+
+
+@media (max-width: 1680px) {
+    .about__title {
+        font-size: 15px;
+    }
+
+    .about__category {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .about__item {
+        width: calc(50% - 20px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 0;
+    }
+    .about__item {
+        width: 100%;
+    }
+
+    .about__item:nth-child(1n) {
+        background-color: #272727;
+
+        &:hover {
+            background-color: #040405;
+        }
+
+    }
+
+    .about__item:nth-child(2n) {
+        background-color: #040405;
+
+        &:hover {
+            background-color: #272727;
+        }
+    }
+}
